@@ -2,4 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: #000; */
+}
+
+.landing{
+    height: 100vh;
+    width: 100vw;
+    
+    /* to dim the background-image */
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/landing_background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;  
+}
+.nav{
+    position:absolute;
+    display: flex;
+    color: aliceblue;
+    top: 0;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    
+}
+.main{
+    color:#fff;
+    text-align: center;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    /* font-weight: bold; */
+    
+}
+.main h1{
+    font-size: 3.6rem;
+    padding-bottom: 1.5rem;
+}
+#watch{
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+#ready{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+#email{
+    width:40rem;
+    font-size: 1.2rem;
+    padding: 1.15rem
+}
+#started{
+   
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(233, 17, 17);
+    color: #fff;
+    border-radius: 4px;
+    border: none;
 }
