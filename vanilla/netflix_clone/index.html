@@ -8,28 +8,111 @@
     <title>Netflix_clone</title>
 </head>
 <body>
-    <div class="landing">
-        <div class='nav'>
-            <div class="logo">
-                <img src="static/images/Netflix_2015_logo.svg" alt="">
-            </div>
-            <div class="items">
-              <select name="language" class='language' id=" language">
-                <option value='english' id='language'>English</option>
-                <option value='hindi' id='language'>Hindi</option>
-              </select>
-              <button class='sign_in' id='sign_in'>Sign In</button>
-            </div>
-          </div>
-        <div class="main">
-            <h1>Unlimited movies, TV <br/>shows and more.</h1>
-            <p id="watch">Watch anywhere. Cancel anytime.</p>
-            <p id="ready">Ready to watch? Enter your email to create or restart your membership.</p>
-            <input type="email" placeholder="Email address" id='email'/>
-            <button id="started">Get Started ></button>
-        </div>
-        
+<!-- ********************************************************************************************* -->
+  <!-- header starts -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="static/images/Netflix_2015_logo.svg" alt="">
     </div>
+    <div class="items">
+      <select name="language" class='language' id=" language">
+        <option value='english' id='language'>English</option>
+        <option value='hindi' id='language'>Hindi</option>
+      </select>
+      <button class='sign_in' id='sign_in'>Sign In</button>
+    </div>
+    </nav>
+  </header>
+  <!-- header ends -->
+<!-- ********************************************************************************************* -->
+  <!-- landing section starts -->
+    <main class="landing">
+        <div class="main">
+
+          <!-- content -->
+            <h2>Unlimited movies, TV <br/>shows and more.</h2>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p id="ready">Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <!-- email input -->
+            <input type="email" placeholder="Email address" id='email'/>
+
+            <!-- get started button -->
+            <button id="started">Get Started ></button>
+        </main>
+        <!-- landing section ends -->
+<!-- ********************************************************************************************* -->
+        <!-- second section starts -->
+        <section class="container">
+          <div>
+            <h2>Enjoy on your TV.</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+          </div>
+          <div >
+            <img src="static/images/tv.png" alt="">
+          </div>
+          
+
+        </section>
+        <!-- second section ends    -->
+<!-- ********************************************************************************************* -->
+        <!-- third section starts -->
+        <section class="container">
+          <div >
+            <img src="static/images/mobile-0819.jpg" alt="">
+          </div>
+          <div>
+            <h2>Download your shows to watch offline.</h2>
+            <p>Save your favourites easily and always have something to watch.</p>
+          </div>
+        </section>
+        <!-- third section ends    -->
+<!-- ********************************************************************************************* -->
+        <section class="container">
+          <div >
+            <h2>Watch everywhere.</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+          </div>
+          <div >
+            <img src="static/images/device-pile-in.png" alt="">
+          </div>
+          
+        </section>
+<!-- ********************************************************************************************* -->
+        <!-- fourth section starts -->
+        <section class="container">
+          <div >
+            <img src="static/images/kidsValueProp.png" alt="">
+          </div>
+          <div class="content">
+            <h2>Create profiles for children.</h2>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+          </div>
+        </section>
+        <!-- fourth section ends -->
+<!-- ********************************************************************************************* -->
+
+        <section class="container top ">
+          <div>
+            <h2>Frequently Asked Questions</h2>
+            <p class="faq">What is Netflix?</p><br/>
+            <p class="faq">How much does Netflix Cost</p><br/>
+            <p class="faq">Where can I watch?</p><br/>
+            <p class="faq">How do I cancel?</p><br/>
+            <p class="faq">What can I watch on Netflix?</p><br/>
+            <p class="faq">Is Netflix good for kids?</p><br/>
+
+          </div>  
+        </section>
+<!-- ********************************************************************************************* -->
+
+<!-- footer starts -->
+<footer>
+  
+</footer>
+<!-- footer ends -->
+
     <script src="static/javascript/main.js"></script>
 </body>
 </html>
