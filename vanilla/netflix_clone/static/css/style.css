@@ -8,7 +8,7 @@
 .landing{
     height: 100vh;
     width: 100vw;
-    
+
     /* to dim the background-image */
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/landing_background.jpg");
     background-size: cover;
@@ -16,19 +16,57 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;  
+    padding: 2rem;  
 }
 .nav{
-    position:absolute;
+    position: fixed;
+    height:35px;
+    width:100vw;
+    margin:1rem;
     display: flex;
-    color: aliceblue;
-    top: 0;
-    margin: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
+    justify-content:space-between;
+    align-items: center;
+    top:3%;
+    gap:3rem;
     
-}
+  }
+
+  .logo img{
+    margin-left: 5rem;
+    height: 50px;
+  }
+  .items{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  
+  .language,.sign_in{
+    font-size: 1.3rem;
+    padding:8px 2px;
+    width:7rem;
+    
+    
+  }
+  .sign_in{
+    border-radius:6px;
+    background-color:#e50914;
+    color:white;
+    border:none;
+    
+    
+    
+  }
+  .language{
+    border-radius:6px;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    border: 1px solid #fff;
+    
+  }
 .main{
     color:#fff;
     text-align: center;
