@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #282828;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clock {
+    width: 30rem;
+    height: 30rem;
+    border:  40px solid #282828;
+    border-radius: 50%;
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+                inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+                inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+                4px 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+.clock_outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #282828;
+    overflow: hidden;
+}
+.clock_outer::after {
+    transform: rotate(90deg);
+}
+.clock_outer::before,
+.clock_outer::after,
+.clock_outer .marking {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background-color: #ee791a;
+    left: 49%;
+    z-index: 0;
+    
+}
+.clock_outer .marking {
+    background-color: #bdbdcb;
+    width: 3px;
+}
+.clock_outer .marking.marking_one {
+    transform: rotate(30deg);
+}
+.clock_outer .marking.marking_two {
+    transform: rotate(60deg);
+}
+.clock_outer .marking.marking_three {
+    transform: rotate(120deg);
+}
+.clock_outer .marking.marking_four {
+    transform: rotate(150deg);
+}
+.clock_inner {
+    
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: #282828;
+    border-radius: 100%;
+    z-index: 1;
+    
+}
+.clock_inner::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 16px ;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #4d4b63;
+    z-index: 4;
+}
+.hand{
+    width:50%;
+    height: 6px;
+    right: 50%;
+    top: 50%;
+    background-color: #61afff;
+    position: absolute;
+    border-radius: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+}
+.hand#hour_hand{
+    width: 30%;
+
+}
+.hand#min_hand {
+    width: 40%;
+    height: 3px;
+    z-index: 2;
+}
+.hand#second_hand{
+    width: 45%;
+    height: 2px;
+    background: #ee791a;
+    z-index: 3;
+}
+.date {
+    padding-top: 600px;
+    
+}
